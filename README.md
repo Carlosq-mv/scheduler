@@ -9,7 +9,7 @@ touch .env
 SCHEDULER_TAG=1.0.2
 ```
 - Open `.env` file and add the line above. This tells Docker Compose which version of the scheduler image to pull from Docker Hub
-- **Note**: `1.0.2` is the current version of the scheduler. You can see all versions on [Docker Hub]('https://hub.docker.com/r/carlosqmv/ember-alert-scheduler')
+- **Note**: `1.0.2` is the current version of the scheduler. You can see all versions on [Docker Hub](https://hub.docker.com/r/carlosqmv/ember-alert-scheduler)
 
 
 ### 3. Build & Run Docker Containers
@@ -35,7 +35,7 @@ docker run --name my-postgres -e POSTGRES_PASSWORD=postgres -p 5433:5432 -d post
 ```shell
 docker exec -it my-postgres psql -U postgres
 ```
-> Link for useful [PSQL commands]('https://www.geeksforgeeks.org/postgresql-psql-commands/')
+> Link for useful [PSQL commands](https://www.geeksforgeeks.org/postgresql-psql-commands/)
 
 
 ---
