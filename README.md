@@ -25,7 +25,15 @@ virtualenv venv
 pip install -r requirements.txt
 ```
 
-> Run application: `uvicorn main:app --reload`
+### Docker Setup
+- Make sure to download docker
+- This will build & start the containers & run them in the background
+
+```shell
+# Build & run all services 
+docker compose up --build -d
+```
+
 
 
 ### Useful Docker Commands 
