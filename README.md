@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ### Useful Docker Commands 
 ```shell
 # create and start posgres docker container
-docker run --name my-postgres -e POSTGRES_PASSWORD=postgres -p 5433:5432 -d postgres
+$ docker run --name my-postgres -e POSTGRES_PASSWORD=postgres -p 5433:5432 -d postgres
 
 # enter psql
 $ docker exec -it my-postgres psql -U postgres
@@ -47,4 +47,13 @@ $ docker ps -a
 
 # all running docker containers
 $ docker ps
+
+# build docker image
+$ docker build -f Dockerfile -t carlosqmv/ember-alert-scheduler:[tagname] .
+
+# push docker image to docker hub
+$ docker push carlosqmv/ember-alert-scheduler:[tagname]
+
+# docker compose cmd
+$ docker compose up -d
 ```
