@@ -28,7 +28,7 @@ app = FastAPI(lifespan=lifespan)
 
 
 # poll date from the api every 5 minutes
-@scheduler.scheduled_job('interval', seconds=30, id="poll-from-api")
+@scheduler.scheduled_job('interval', seconds=300, id="poll-from-api")
 async def poll_from_api():
     db = SessionLocal()
     try:
